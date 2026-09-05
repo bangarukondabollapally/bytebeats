@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ByteBeats - Catalogue</title>
+    <link rel="stylesheet" href="catalogue-style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>ByteBeats</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="catalogue">
+
+        <h2>Music Catalogue</h2>
+
+        <input type="text" id="search"
+        placeholder="Search songs...">
+
+        <select id="genre">
+            <option value="all">All Genres</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hip Hop">Hip Hop</option>
+        </select>
+
+        <div class="cards" id="songs">
+
+            <div class="card" data-genre="Hindi">
+                <h3>AARI AARI</h3>
+                <p>Khan Saab</p>
+                <p>Hindi</p>
+                <button onclick="playSong('AARI AARI')">
+                    Play
+                </button>
+            </div>
+
+            <div class="card" data-genre="Hindi">
+                <h3>Ishq Jalakar</h3>
+                <p>Karvaan</p>
+                <p>Hindi</p>
+                <button onclick="playSong('Ishq Jalakar')">
+                    Play
+                </button>
+            </div>
+
+            <div class="card" data-genre="Hip Hop">
+                <h3>Aaya Sher</h3>
+                <p>Various Artists</p>
+                <p>Hip Hop</p>
+                <button onclick="playSong('Aaya Sher')">
+                    Play
+                </button>
+            </div>
+
+            <div class="card" data-genre="Telugu">
+                <h3>Rebel Saab</h3>
+                <p>Telugu Artist</p>
+                <p>Telugu</p>
+                <button onclick="playSong('Rebel Saab')">
+                    Play
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="player">
+
+        <h2>Now Playing</h2>
+
+        <p id="nowPlaying">No song selected</p>
+
+        <button onclick="previousSong()">Previous</button>
+        <button onclick="nextSong()">Next</button>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 ByteBeats</p>
+
+</footer>
+
+<script src="catalogue-script.js"></script>
+
+</body>
+</html>
