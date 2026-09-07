@@ -1,10 +1,10 @@
 function playSong(song){
-    document.getElementById("nowPlaying").innerHTML =
+    document.querySelector("#nowPlaying").innerHTML =
         "Now Playing: " + song;
 }
 
-let search = document.getElementById("search");
-let genre = document.getElementById("genre");
+let search = document.querySelector("#search");
+let genre = document.querySelector("#genre");
 let cards = document.querySelectorAll(".card");
 
 search.addEventListener("input", filterSongs);
