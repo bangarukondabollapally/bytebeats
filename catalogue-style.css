@@ -112,6 +112,12 @@ section{
     align-items:center;
 }
 
+input{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
 #data{
     text-align:center;
     white-space:pre-line;
