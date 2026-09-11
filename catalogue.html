@@ -90,15 +90,48 @@
 
     </section>
 
+    <section>
+        <h2>Load Music Info</h2>
+
+        <button onclick="loadData()">Load Data</button>
+
+        <p id="data"></p>
+
+    </section>
+
+    <section>
+    <section>
+        <h2>Song Details</h2>
+
+        <button onclick="loadSongs()">Load Songs</button>
+
+        <p id="songDetails"></p>
+    </section>
+
+    <section>
+        <h2>Send Song Data</h2>
+
+        <input type="text" id="song" placeholder="Song Name">
+        <input type="text" id="artist" placeholder="Artist">
+
+        <button onclick="sendData()">Send</button>
+
+        <p id="result"></p>
+    </section>
+
+<script src="post.js"></script>
+    </section>
+
 </main>
 
 <footer>
-
+    
     <p>&copy; 2026 ByteBeats</p>
-
+    
 </footer>
 
 <script src="catalogue-script.js"></script>
+<script src="fetch.js"></script>
 
 </body>
 </html>
